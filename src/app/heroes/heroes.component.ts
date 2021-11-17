@@ -8,9 +8,13 @@ import { HEROES } from '../mock-heroes';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
+  // assign all the mock heroes to a variable 
   heroes = HEROES;
 
+  //selectedHero is a local object that holds hero object
   selectedHero?: Hero;
+
+  // when the hero is selected, the selected hero object will assigned to selectedHero
   onSelect(hero: Hero): void {
   this.selectedHero = hero;
 }
